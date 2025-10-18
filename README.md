@@ -39,7 +39,7 @@ Instrucciones de ejecución
 
 1. Tener instalado: Python 3.11 o superior
 2. Descargar el repositorio
-3. https://github.com/patrick8ms-wq/deficit-expectativas-tasa-referencia-bcrp/
+https://github.com/patrick8ms-wq/deficit-expectativas-tasa-referencia-bcrp/
 4. Instalar dependencias
 5. Con requirements.txt:
  pip install -r requirements.txt
@@ -48,11 +48,17 @@ Instrucciones de ejecución
 Decisiones de modelado:
 
 -Frecuencia temporal: todas las series se ajustan al primer día del mes.
+
 -Limpieza de datos: se eliminan filas vacías o con formatos inconsistentes de fecha para estandarizar.
+
 -Transformación: se convierten los nombres de meses a valores numéricos.
+
 -Unificación de series: se realiza un merge por la columna Fecha para conservar el rango completo de observaciones.
+
 -Estandarización de columnas: se renombran las variables para mantener consistencia.
+
 -Almacenamiento final: los resultados se guardan en un archivo CSV (series_consolidadas.csv).
+
 -Modelo econométrico: se estiman regresiones lineales simples y múltiples para explorar relaciones entre las expectativas, el déficit fiscal y la tasa de referencia.
 
 
