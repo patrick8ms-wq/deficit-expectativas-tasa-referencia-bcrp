@@ -38,8 +38,8 @@ Librerías usadas
 Instrucciones de ejecución
 
 1. Tener instalado: Python 3.11 o superior
-2. Descargar o clonar el repositorio:
-git clone https://github.com/patrick8ms-wq/deficit-expectativas-tasa-referencia-bcrp.git
+2. Descargar el repositorio:
+   https://github.com/patrick8ms-wq/deficit-expectativas-tasa-referencia-bcrp.git
 4. Instalar dependencias
 5. Con requirements.txt:
  pip install -r requirements.txt
