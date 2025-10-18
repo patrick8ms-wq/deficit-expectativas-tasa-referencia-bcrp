@@ -40,8 +40,7 @@ Instrucciones de ejecución
 1. Tener instalado: Python 3.11 o superior
 2. Descargar el repositorio:
    https://github.com/patrick8ms-wq/deficit-expectativas-tasa-referencia-bcrp.git
-4. Instalar dependencias
-5. Con requirements.txt:
+4. Instalar dependencias con requirements.txt:
  pip install -r requirements.txt
 6. Ejecutar el notebook:
 jupyter notebook T2_ML_G6.ipynb
