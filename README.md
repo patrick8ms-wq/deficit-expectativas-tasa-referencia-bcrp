@@ -33,17 +33,18 @@ Librerías usadas
 - `pandas`, `numpy` manejo de datos y series temporales  
 - `matplotlib`, `seaborn`  visualización  
 - `statsmodels`, `scikit-learn`  estimación de modelos econométricos  
-- `requests`, `openpyxlcarga` de datos desde Excel y web  
+- `requests`, `openpyxlcarga` lectura de datos desde Excel y conexión a la web  
 
 Instrucciones de ejecución
 
 1. Tener instalado: Python 3.11 o superior
-2. Descargar el repositorio
-https://github.com/patrick8ms-wq/deficit-expectativas-tasa-referencia-bcrp/
+2. Descargar o clonar el repositorio:
+git clone https://github.com/patrick8ms-wq/deficit-expectativas-tasa-referencia-bcrp.git
 4. Instalar dependencias
 5. Con requirements.txt:
  pip install -r requirements.txt
-6. Ejecutar el notebook: Abre el notebook con Jupyter
+6. Ejecutar el notebook:
+jupyter notebook T2_ML_G6.ipynb
 
 Decisiones de modelado:
 
