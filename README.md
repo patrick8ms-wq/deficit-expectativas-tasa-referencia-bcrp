@@ -100,6 +100,7 @@ El archivo requirements.txt del repositorio contiene las versiones exactas.
 Resultados
 
 1. Naive baseline
+
 El baseline consiste en predecir que el valor actual será igual al del mes previo. Sirve como referencia para evaluar si los modelos realmente añaden poder predictivo.
 
 Horizonte	MSE Baseline
@@ -107,6 +108,7 @@ Horizonte	MSE Baseline
 12 meses	8.40
 
 2. Resultados por modelo
+
 2.1 Horizonte 3 meses (exp_eco_3m)
 Modelo, test MSE
 Baseline	(4.09):	Modelo más preciso. Difícil de superar.
@@ -116,6 +118,7 @@ Lasso	(11.10):	Elimina ruido, pero sigue lejos del baseline.
 Ridge	(21.22):	Afectado por multicolinealidad en la matriz de predictores.
 
 Ningún modelo supera al baseline. Las expectativas a 3 meses dependen casi por completo de su propio valor rezagado. La serie muestra una estructura autorregresiva muy fuerte.
+
 
 2.2 Horizonte 12 meses (exp_eco_12m)
 Modelo, test MSE
@@ -128,6 +131,7 @@ Random Forest	(35.18):	Sobreajuste.
 A diferencia del horizonte de 3 meses, Lasso sí mejora el baseline, la regularización L1 logra filtrar el ruido y seleccionar las variables macro-financieras realmente relevantes a este horizonte.
 
 3. Importancia de variables
+   
 Random Forest — Horizonte 3 meses
 
 Las variables con mayor importancia fueron:
