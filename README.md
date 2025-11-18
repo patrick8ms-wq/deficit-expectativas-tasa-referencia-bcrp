@@ -3,7 +3,7 @@
 
 Trabajo 3 — PCA y Modelos Predictivos
 
-Em el Trabajo 3 se amplía el análisis realizado previamente incorporando nuevas variables, aplicando Análisis de Componentes Principales (PCA) y comparando modelos predictivos usando validación cruzada para series de tiempo.
+En el Trabajo 3 se amplía el análisis realizado previamente incorporando nuevas variables, aplicando Análisis de Componentes Principales (PCA) y comparando modelos predictivos usando validación cruzada para series de tiempo.
 El objetivo central es entender mejor la relación entre las expectativas empresariales, el déficit fiscal y la tasa de referencia del BCRP, y evaluar qué tan bien diferentes modelos pueden anticipar su comportamiento.
 
 Este incluye:
