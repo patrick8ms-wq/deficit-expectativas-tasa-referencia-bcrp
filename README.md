@@ -141,9 +141,13 @@ Random Forest — Horizonte 3 meses
 
 Las variables con mayor importancia fueron:
 exp_eco_3m_l1 (82%)
+
 exp_eco_3m_l3
+
 gasto_no_financiero_l3
+
 deficit_x_tasa
+
 embig_pe_l1
 
 El modelo depende casi exclusivamente del rezago 1, lo cual explica por qué no puede superar al baseline.
@@ -152,8 +156,11 @@ Lasso — Horizonte 12 meses
 Lasso seleccionó un número reducido de predictores:
 
 exp_eco_12m_l1
+
 Interacciones fiscales (déficit x tasa / embig)
+
 Lags de EMBIG y gasto público
+
 Esto sugiere que a horizontes más largos, las expectativas incorporan información macrofinanciera.
 
 
