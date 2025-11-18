@@ -21,15 +21,21 @@ Los datos provienen de la API estadística del BCRP, cubriendo el periodo 2015�
 Variables principales:
 
 Fecha: periodo mensual.
+
 Deficit_Fiscal: déficit fiscal acumulado a 12 meses en % del PBI.
+
 Expect_3m: expectativas empresariales a 3 meses.
+
 Expect_12m: expectativas empresariales a 12 meses.
+
 Tasa_Referencia: tasa de referencia del BCRP.
 
 Variables añadidas en este trabajo:
 
 Rezagos de cada serie (lag1, lag2, etc.).
+
 Variaciones mensuales.
+
 Transformaciones para mejorar estacionariedad.
 
 Estas variables adicionales permiten capturar persistencia temporal y la manera en que los efectos económicos se transmiten con rezagos.
@@ -40,13 +46,18 @@ PCA — Análisis de Componentes Principales
 El PCA se utiliza como una herramienta para:
 
 Identificar correlaciones fuertes entre variables.
+
 Revisar problemas de multicolinealidad.
+
 Visualizar la estructura de los datos en menor dimensión.
+
 Analizar la varianza explicada por cada componente.
 
 El notebook incluye:
 Scree plot.
+
 Biplot.
+
 Cálculo de varianza acumulada.
 
 Así se evalúan cuántos componentes serían útiles como entrada para los modelos.
@@ -57,13 +68,16 @@ El trabajo incluye la comparación de dos modelos:
 
 1. Modelo regularizado
 Ridge o Lasso.
+
 Este modelo se ajusta usando RidgeCV/LassoCV, que permiten encontrar automáticamente el valor óptimo de λ.
 
-2. Modelo de ensamble
+3. Modelo de ensamble
 Random Forest o XGBoost.
+
 Se ajustan usando GridSearchCV, y se documentan los hiperparámetros del grid, por qué se probaron y cuáles fueron los óptimos.
 
 Validación
+
 Ambos modelos se validan con TimeSeriesSplit, lo cual es clave para evitar “leakage” temporal.
 La métrica principal es el MSE.
 
@@ -72,25 +86,37 @@ La métrica principal es el MSE.
 Instrucciones de ejecución
 
 1. Tener instalado: Python 3.11 o superior
+   
 2. Clonar el repositorio
    git clone https://github.com/patrick8ms-wq/deficit-expectativas-tasa-referencia-bcrp
    cd deficit-expectativas-tasa-referencia-bcrp
+   
 3. Instalar dependencias con requirements.txt:
    pip install -r requirements.txt
+   
 4. Ejecutar el notebook:
    jupyter notebook notebook/trabajo3.ipynb
 
 
 Las librerías usadas en el notebook incluyen:
 pandas
+
 numpy
+
 matplotlib
+
 seaborn
+
 scikit-learn
+
 statsmodels
+
 requests
+
 openpyxl
+
 xgboost
+
 El archivo requirements.txt del repositorio contiene las versiones exactas.
 
 
