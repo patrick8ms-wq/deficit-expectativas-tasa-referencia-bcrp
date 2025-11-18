@@ -122,10 +122,15 @@ Ningún modelo supera al baseline. Las expectativas a 3 meses dependen casi por 
 
 2.2 Horizonte 12 meses (exp_eco_12m)
 Modelo, test MSE
+
 Lasso	(7.08): Mejor modelo. El único que supera al baseline.
+
 Baseline	(8.40):	Punto de referencia.
+
 Ridge	(20.90).	Nuevamente afectado por multicolinealidad.
+
 XGBoost	(30.70):	Problemas de generalización.
+
 Random Forest	(35.18):	Sobreajuste.
 
 A diferencia del horizonte de 3 meses, Lasso sí mejora el baseline, la regularización L1 logra filtrar el ruido y seleccionar las variables macro-financieras realmente relevantes a este horizonte.
