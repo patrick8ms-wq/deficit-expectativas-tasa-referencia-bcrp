@@ -33,17 +33,17 @@ Estas variables adicionales permiten capturar persistencia temporal y la manera 
 
 
 Trabajo 1 (EDA)
-Se realizó una exploración minuciosa de los datos para identificar patrones, anomalías y relaciones entre variables. Esto permitió seleccionar las variables predictoras clave: deficit_fiscal y tasa_ref, así como las variables objetivo: exp_eco_3m y exp_eco_12m.
+Se realizó una exploración minuciosa de los datos para identificar patrones, anomalías y relaciones entre variables. Se seleccionaron las variables más relevantes para los modelos posteriores, destacando el déficit fiscal y la tasa de referencia como posibles predictores de las expectativas empresariales.
 
 Trabajo 2 (Baseline)
-Se entrenó un modelo OLS como referencia para medir el desempeño inicial. Este permitió tener un punto de comparación simple para los modelos posteriores más complejos.
+Se implementó un modelo lineal, una regresión OLS, como referencia, evaluando su desempeño en las expectativas a 3 y 12 meses. Este baseline permitió establecer un punto de comparación para modelos más complejos y entender la persistencia de las expectativas.
 
 Trabajo 3 (Modelos Complejos)
-Se aplicaron Ridge, Lasso, Random Forest y XGBoost, incluyendo tuning y validación cruzada. Se comparó su desempeño frente al baseline y se identificó el mejor modelo para cada horizonte de predicción.
+Se probaron modelos como Ridge, Lasso, Random Forest y XGBoost para mejorar la predicción. Así, se realizaron comparaciones de su desempeño mediante MSE y se seleccionó el modelo con mejor balance entre error y generalización. 
 
 Trabajo 4 (MLP y análisis causal)
-Se incluyó un DAG para representar relaciones causales entre variables. Además, se entrenaron redes neuronales MLP para capturar relaciones no lineales entre las variables predictoras y la variable objetivo. Los resultados se compararon con modelos previos, mostrando mejoras especialmente en el horizonte de 3 meses.
-
+Se incluyó un DAG para representar relaciones causales entre variables. 
+Además, se entrenaron redes neuronales MLP para capturar las relaciones no lineales entre déficit fiscal, tasa de referencia y expectativas empresariales. Se detalló la arquitectura, funciones de activación, escalado de datos y la optimización de hiperparámetros. Los resultados mostraron mejoras significativas sobre el baseline, especialmente para el horizonte de 3 meses, y comparables a los mejores modelos previos para 12 meses.
 
 
 Instrucciones de ejecución
