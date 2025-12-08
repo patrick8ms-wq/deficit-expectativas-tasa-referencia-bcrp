@@ -2,11 +2,11 @@
 
  
 
-Predicción de Expectativas Empresariales usando Indicadores Macroeconómicos (2015–2025)
+# Predicción de Expectativas Empresariales usando Indicadores Macroeconómicos (2015–2025)
 
 Modelos Lineales, Regularización, Ensemble Methods y Redes Neuronales
 
-Integrantes del equipo:
+# Integrantes del equipo:
 
 Carmen Crisanto, César Jair
 
@@ -23,7 +23,7 @@ El objetivo principal es construir y evaluar modelos capaces de predecir las exp
 
 Además de la predicción, el proyecto busca interpretar los factores económicos que influyen en el comportamiento de las expectativas y analizar cómo los efectos fiscales y monetarios se transmiten en el tiempo. Un reto importante es que, en el contexto peruano, las expectativas suelen ser altamente persistentes; por ello, encontrar modelos que superen la simple inercia se convierte en un aporte valioso del trabajo.
 
-Datos y variables
+# Datos y variables
 
 Los datos fueron descargados directamente desde la API estadística del BCRP y cubren el periodo 2015–2025, con frecuencia mensual.
 
@@ -50,7 +50,7 @@ Variaciones mensuales.
 Transformaciones e interacciones orientadas a mejorar estacionariedad y reducir ruido.
 Estas permiten modelar de forma más realista la persistencia, los efectos rezagados y las relaciones heterogéneas entre déficit fiscal, gasto no financiero, riesgo país, tasa de referencia y expectativas empresariales.
 
-Estructura del proyecto:
+# Estructura del proyecto:
 
 Trabajo 1 (EDA): Se realizó una exploración inicial de las series base —déficit fiscal, tasa de referencia y expectativas empresariales— para identificar patrones, anomalías y relaciones preliminares, antes de incorporar posteriormente el gasto no financiero y el EMBIG Perú. El análisis muestra un déficit fiscal persistente y creciente, en un contexto de reiterados incumplimientos de las reglas fiscales, junto con correlaciones negativas entre déficit y expectativas, sugiriendo un posible efecto adverso sobre la confianza empresarial. Además, se observa que las expectativas a 12 meses son más estables que las de 3 meses, lo que indica que el corto plazo responde con mayor fuerza a shocks transitorios.
 
@@ -60,7 +60,7 @@ Trabajo 3 (Modelos Complejos): Tras los resultados del Trabajo 2, donde los mode
 
 Trabajo 4 (MLP y análisis causal) Se incluyó un DAG para representar relaciones causales entre variables. Además, se entrenaron redes neuronales MLP para capturar las relaciones no lineales entre déficit fiscal, tasa de referencia y expectativas empresariales. Se detalló la arquitectura, funciones de activación, escalado de datos y la optimización de hiperparámetros. Los resultados mostraron mejoras significativas sobre el baseline, especialmente para el horizonte de 3 meses, y comparables a los mejores modelos previos para 12 meses.
 
-Instrucciones de ejecución
+# Instrucciones de ejecución
 
 Requisitos:
 
